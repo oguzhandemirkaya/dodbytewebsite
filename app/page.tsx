@@ -12,23 +12,16 @@ export default function Home() {
 
     // Resimler dizisi, public/images klasöründeki resimlerle
     const images = [
-      "/images/parallax1.webp",
-      "/images/parallax2.webp",
-      "/images/parallax3.webp",
-      "/images/parallax4.webp",
-      "/images/parallax5.webp",
-      "/images/parallax6.webp",
-      "/images/parallax7.webp",
-      "/images/parallax8.webp",
-      "/images/parallax9.webp",
-      "/images/parallax6.webp",
-      "/images/parallax7.webp",
-      "/images/parallax8.webp",
-      "/images/parallax9.webp",
-      "/images/parallax6.webp",
-      "/images/parallax7.webp",
-      "/images/parallax8.webp",
-      "/images/parallax9.webp",
+      "/images/_001.webp",
+      "/images/_002.webp",
+      "/images/_003.webp",
+      "/images/_004.webp",
+      "/images/_005.webp",
+      "/images/_006.webp",
+      "/images/_007.webp",
+      "/images/_008.webp",
+      "/images/_009.webp",
+      "/images/_010.webp",
     ];
 
 
