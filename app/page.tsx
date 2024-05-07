@@ -9,8 +9,7 @@ import { HeroParallax } from "./website";
 import React from "react";
 import { ThreeDCardExample } from "./snipped/3d-card-snippet";
 import { EvervaultCardSnippet } from "./snipped/evervault-card-snippet";
-import { GridBackground } from "@/components/ui/background";
-
+import '../app/globals.css';
 
 
 
@@ -21,14 +20,16 @@ export default function Home() {
       "/images/_002.webp",
       "/images/_003.webp",
       "/images/_004.webp",
-      "/images/_005.webp",
-      "/images/_006.webp",
-      "/images/_007.webp",
       "/images/_008.webp",
       "/images/_009.webp",
       "/images/_010.webp",
-      "/images/_009.webp",
+      "/images/_005.webp",
+      "/images/_006.webp",
+      "/images/_007.webp",
       "/images/_010.webp",
+      "/images/_010.webp",
+      
+      
     ];
   
   

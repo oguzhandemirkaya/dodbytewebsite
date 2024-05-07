@@ -74,3 +74,28 @@
       @apply bg-background text-foreground;
     }
   }
+
+  /* styles/global.css */
+
+/* Scrollbar'ı tüm elementler için özelleştir */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF6220;
+  border-radius: 6px;
+}
+
+/* Scrollbar handle üzerine hover yapıldığında */
+::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1;
+}
+
+
