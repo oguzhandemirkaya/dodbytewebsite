@@ -6,12 +6,17 @@ import Link from "next/link";
 import SliderOne from "@/components/ui/slider";
 import { ParallaxScroll } from "@/app/graphic-design";
 import { HeroParallax } from "./website";
+import React from "react";
+import { ThreeDCardExample } from "./snipped/3d-card-snippet";
+import { EvervaultCardSnippet } from "./snipped/evervault-card-snippet";
+import { GridBackground } from "@/components/ui/background";
+
+
+
+
 
 export default function Home() {
-
-
-    // Resimler dizisi, public/images klasöründeki resimlerle
-    const images = [
+  const images = [
       "/images/_001.webp",
       "/images/_002.webp",
       "/images/_003.webp",
@@ -22,9 +27,11 @@ export default function Home() {
       "/images/_008.webp",
       "/images/_009.webp",
       "/images/_010.webp",
+      "/images/_009.webp",
+      "/images/_010.webp",
     ];
-
-
+  
+  
       const products = [
         {thumbnail: "/images/c1s.png" },
         {thumbnail: "/images/l1s.png" },
@@ -38,65 +45,67 @@ export default function Home() {
         {thumbnail: "/images/l1s.png" },
        
       ];
+  
   return (
-    <div className="w-full md:items-center md:justify-center 
-    bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
-  <Navbar />
-  <Spotlight 
-  className="hidden md:flex left-80" 
-  fill="white" />
-      <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
-        <div className="text-4xl pb-5 md:text-7xl px-6 text-center  
-        bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to
-         bg-neutral-400 bg-opacity-50">
-          #thinkdevelopshare <br />
-          <span style={{color: '#FF6220', fontSize: '4rem'}}>
-            <strong>scale your business</strong>
-          </span>
-        </div>
-        <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
-        Custom solutions for your business growth. Our creative team is here to help you succeed.
-        </p>
 
-      <Link
-      href={"/book"}
-      className="cursor-pointer flex items-center 
-      justify-center border rounded-full w-48 p-2  mx-auto my-6 text-white"
-      >
-        Book a call
-      </Link>
+    
+      <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+          <Navbar />
+          <Spotlight className="hidden md:flex left-80" fill="white" />
+          <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
+              <div className="text-3xl pb-5 md:text-7xl px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to bg-neutral-400 bg-opacity-50">
+                  #thinkdevelopshare <br />
+                  <span style={{ color: '#FF6220', fontSize: '4rem' }}>
+    <strong style={{ fontSize: '3rem' }}>scale your business</strong>
+</span>
 
-      <div className="w-full pt-20">
-        <SliderOne />
-
-      </div>  
-      
-      <div className="text-white">
-  <div className="p-4 mx-auto relative z-10 w-full pt-4 md:pt-0 px-2 "> 
-    <div className="text-4xl md:text-7xl text-center bg-clip-text 
-    text-transparent bg-gradient-to-b from-orange-500 to-sky-200 ">
-      Graphic Design <br /> that works
-    </div>
-    <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4">
-      Creating unique
-    </p>
-  </div>
-</div>
-<div>
-  <ParallaxScroll images={images} className="my-4" /> {/* my-12'i my-4 olarak değiştirdim */}
-</div>
-
-<div>
-  <HeroParallax products={products} />
-</div>
+              </div>
+              <p className="mt-4 text-lg md:text-xl lg:text-2xl font-normal text-neutral-300 max-w-lg text-center mx-auto px-4">
+    Custom solutions for your business growth. Our creative team is here to help you succeed.
+</p>
 
 
+              <Link
+                  href={"/book"}
+                  className="cursor-pointer flex items-center justify-center border rounded-full w-48 p-2 mx-auto my-6 text-white"
+              >
+                  Book a call
+              </Link>
 
-    </div>
-   </div>
-   
-   
+              <div className="w-full pt-10">
+                  <SliderOne />
+              </div>
+
+              <div className="text-white">
+                  <div className="p-4 mx-auto relative z-10 w-full pt-4 md:pt-0 px-2 ">
+                      <div className="text-4xl md:text-7xl text-center text-orange-500" style={{ color: '#FF6220' }}>
+                          Graphic Design <br /> that works
+                      </div>
+                      <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4">
+                          Creating unique
+                      </p>
+                  </div>
+              </div>
+              <div>
+                  <ParallaxScroll images={images} className="my-4" /> {/* my-12'i my-4 olarak değiştirdim */}
+              </div>
+          </div>
+
+          <div className="items-center md:flex justify-center md:mx-auto md:space-x-20">
+                    <div className="flex-1/2">
+                        <ThreeDCardExample />
+                    </div>
+                    <div className="flex-1/2">
+                        <EvervaultCardSnippet />
+                    </div>
+                </div>
+
+
+
+
+          <div>
+              <HeroParallax products={products} />
+          </div>
+      </div>
   );
-
 }
-

@@ -100,9 +100,8 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="p-4 mx-auto relative z-10 w-full pt-4 md:pt-0 px-2">
-      <h1 className="text-4xl md:text-7xl text-center bg-clip-text 
-    text-transparent bg-gradient-to-b from-orange-500 to-sky-200">
-        Dodbyte creative <br /> development studio
+      <h1 className="text-4xl md:text-7xl text-center text-orange-500" style={{ color: '#FF6220' }}>
+        Web & App Development <br />
       </h1>
       <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4">
       We develop unique products with the latest technologies and frames.
@@ -124,7 +123,7 @@ export const ProductCard = ({
   return (
     <motion.div
       style={{ x: translate }}
-      className="group product h-[32rem] w-[50rem] relative flex-shrink-0"
+      className="group product h-[24rem] w-[38rem] relative flex-shrink-0"
     >
       <Image
         src={product.thumbnail}
