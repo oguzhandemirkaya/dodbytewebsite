@@ -108,11 +108,20 @@ const SliderOne = () => {
         </>
       </Slider>
       <style jsx global>{`
-      .slick-list {
-        padding-left: 12rem; 
-      
-      }
-    `}</style>
+  @media (max-width: 768px) {
+    .slick-list {
+      display: none;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .slick-list {
+      padding-left: 12rem;
+    }
+  }
+`}
+</style>
+
     </div>
   );
 };
