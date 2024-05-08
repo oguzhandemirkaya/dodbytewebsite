@@ -109,7 +109,7 @@ const SliderOne = () => {
       </Slider>
       <style jsx global>{`
       .slick-list {
-        padding-left: 10rem; 
+        padding-left: 12rem; 
       
       }
     `}</style>
