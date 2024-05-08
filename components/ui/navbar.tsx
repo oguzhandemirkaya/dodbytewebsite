@@ -7,16 +7,26 @@ import Image from "next/image";
 import Link from "next/link";
 import DropDownMenu from "./drop-down-menu";
 
-const Navbar = () => {
-    
+interface NavbarProps {
+    scrollToGraphicDesign: () => void;
+    scrollToWebsiteDesign: () => void;
+    scrollToServices: () => void; // Define scrollToServices function
+  }
+  
+
+  const Navbar = ({
+    scrollToWebsiteDesign,
+    scrollToGraphicDesign,
+    scrollToServices, // Add scrollToServices to props
+  }: NavbarProps) => {
     const [isDropDownVisible, setIsDropDownVisible] = useState(false);
-
+  
     const toggleDropDown = () => {
-        setIsDropDownVisible(!isDropDownVisible);
+      setIsDropDownVisible(!isDropDownVisible);
     };
-
+  
     const closeDropDown = () => {
-        setIsDropDownVisible(false);
+      setIsDropDownVisible(false);
     };
 
     return (
@@ -34,9 +44,9 @@ const Navbar = () => {
                 </div>
             </Link>
             <div className="hidden md:flex space-x-10 items-center text-slate-300 text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-white bg-opacity-50"> 
-            <div className="hover:text-gray-50">Graphic Design</div>
-            <div className="hover:text-gray-50">Website & Mobile Apps</div>
-            <div className="hover:text-gray-50">Services</div>
+            <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">Graphic Design</div>
+            <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">Website & Mobile Apps</div>
+            <div onClick={scrollToServices} className="hover:text-gray-50">Services</div>
            
 
 
