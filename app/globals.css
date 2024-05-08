@@ -90,7 +90,7 @@
 /* Scrollbar Handle */
 ::-webkit-scrollbar-thumb {
   background: #FF6220;
-  border-radius: 6px;
+  border-radius: 3px;
 }
 
 /* Scrollbar handle üzerine hover yapıldığında */
@@ -99,3 +99,12 @@
 }
 
 
+/* Parallax container içinde varsayılan scrollbar'ı devre dışı bırak */
+.parallax-container ::-webkit-scrollbar {
+  display: none;
+}
+
+/* Parallax container içinde özel scrollbar'ı aktif et */
+.parallax-container .custom-scrollbar {
+  display: block;
+}

@@ -30,8 +30,9 @@ export const ParallaxScroll = ({
   const thirdPart = images.slice(2 * third);
  
   return (
-    <div
-      className={cn("h-[40rem] items-start overflow-y-auto w-full", className)}
+    <div className={cn("h-[40rem] items-start overflow-y-auto mx-auto md:w-4/5 w-full", className)}
+
+
       ref={gridRef}
     >
       <div
@@ -72,7 +73,7 @@ export const ParallaxScroll = ({
             <motion.div style={{ y: translateThird }} key={"grid-3" + idx}>
               <Image
                 src={el}
-                className="h-80 w-full object-cover object-center rounded-lg gap-10 !m-0 !p-0"
+                className="h-120 w-full object-cover object-center rounded-lg gap-50 !m-0 !p-0"
                 height="400"
                 width="400"
                 alt="thumbnail"

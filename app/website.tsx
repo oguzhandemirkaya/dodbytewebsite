@@ -54,7 +54,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[130vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[140vh] py-60 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -99,15 +99,15 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="p-4 mx-auto relative z-10 w-full pt-4 md:pt-0 px-2">
-      <h1 className="text-4xl md:text-7xl text-center text-orange-500" style={{ color: '#FF6220' }}>
-        Web & App Development <br />
-      </h1>
-      <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4">
+    <div className="p-4 mx-auto relative z-10 w-full pt-4 md:pt-0 px-2 mt-26">
+    <h1 className="text-4xl md:text-7xl text-center text-orange-500" style={{ color: '#FF6220' }}>
+      Web & App Development <br />
+    </h1>
+    <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4">
       We develop unique products with the latest technologies and frames.
       Dynamic, modern and aesthetic
-      </p>
-    </div>
+    </p>
+  </div>
   );
 };
 

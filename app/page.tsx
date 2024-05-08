@@ -10,6 +10,9 @@ import React from "react";
 import { ThreeDCardExample } from "./snipped/3d-card-snippet";
 import { EvervaultCardSnippet } from "./snipped/evervault-card-snippet";
 import '../app/globals.css';
+import Services from "./snipped/services";
+import { LampDemo } from "./snipped/lamp-snippet";
+
 
 
 
@@ -65,7 +68,6 @@ export default function Home() {
     Custom solutions for your business growth. Our creative team is here to help you succeed.
 </p>
 
-
               <Link
                   href={"/book"}
                   className="cursor-pointer flex items-center justify-center border rounded-full w-48 p-2 mx-auto my-6 text-white"
@@ -106,6 +108,11 @@ export default function Home() {
 
           <div>
               <HeroParallax products={products} />
+              <Services />
+            
+          </div>
+          <div>
+          <LampDemo />
           </div>
       </div>
   );
