@@ -31,7 +31,7 @@ const SliderOne = () => {
     <div>
       <Slider {...settings}>
         <>
-          <div className="rounded-md px-2 md:p-10">
+              <div className="px-4">
             <Image
               priority
               src="/images/002.webp"
@@ -91,7 +91,7 @@ const SliderOne = () => {
         </>
 
         <>
-          <div className="rounded-md px- md:p-20">
+          <div className="rounded-md px- md:p-10">
             <Image
               priority
               src="/images/006.webp"
@@ -107,6 +107,12 @@ const SliderOne = () => {
           
         </>
       </Slider>
+      <style jsx global>{`
+      .slick-list {
+        padding-left: 20rem; /* Sola 4 birimlik padding */
+      
+      }
+    `}</style>
     </div>
   );
 };

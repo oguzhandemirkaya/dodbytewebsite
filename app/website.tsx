@@ -48,7 +48,7 @@ export const HeroParallax = ({
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 10]),
+    useTransform(scrollYProgress, [0, 0.2], [-200, 120]),
     springConfig
   );
   return (
@@ -83,7 +83,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-2">
           {thirdRow.map((product, index) => (
             <ProductCard
               product={product}
@@ -103,7 +103,7 @@ export const Header = () => {
     <h1 className="text-4xl md:text-7xl text-center text-orange-500" style={{ color: '#FF6220' }}>
       Web & App Development <br />
     </h1>
-    <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4">
+    <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4"style={{ paddingTop: '40px' }}>
       We develop unique products with the latest technologies and frames.
       Dynamic, modern and aesthetic
     </p>

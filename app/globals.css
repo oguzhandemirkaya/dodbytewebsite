@@ -108,3 +108,8 @@
 .parallax-container .custom-scrollbar {
   display: block;
 }
+.slider-right-shift {
+  transform: translateX(20px);  /* Slider'ı 20px sağa kaydır */
+  /* veya */
+  margin-left: 20px;  /* Slider'a sol taraftan 20px boşluk ekle */
+}
