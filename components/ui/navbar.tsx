@@ -36,14 +36,10 @@ const Navbar = () => {
             <div className="hidden md:flex space-x-10 items-center text-slate-300 text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-white bg-opacity-50"> 
             <div className="hover:text-gray-50">Graphic Design</div>
             <div className="hover:text-gray-50">Website & Mobile Apps</div>
-            <div className="hover:text-gray-50">We use</div>
-            <div className="hover:text-gray-50">Website Design</div>
+            <div className="hover:text-gray-50">Services</div>
+           
 
-    <Link href="/pricing">
-        <div className="hover:text-gray-50">
-            Pricing
-        </div>
-    </Link>
+
 </div>
 
 

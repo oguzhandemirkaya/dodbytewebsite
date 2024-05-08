@@ -109,10 +109,7 @@ export default function Home() {
           <div>
               <HeroParallax products={products} />
               <Services />
-            
-          </div>
-          <div>
-          <LampDemo />
+              <LampDemo />
           </div>
       </div>
   );
