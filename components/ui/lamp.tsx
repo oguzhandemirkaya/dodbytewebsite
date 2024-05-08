@@ -16,7 +16,7 @@ export function LampDemo() {
         }}
         className="mt-3 bg-gradient-to-br from-orange-50 to-orange-300 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-         Let's build <br /> together
+         Let&apos;s build <br /> together  {/* Tırnak işaretini düzeltildi */}
       </motion.h1>
     </LampContainer>
   );

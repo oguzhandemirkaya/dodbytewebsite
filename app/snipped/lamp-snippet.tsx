@@ -18,7 +18,7 @@ export function LampDemo() {
   className="mt-3 bg-gradient-to-br from-orange-50 to-orange-300 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
   style={{ marginTop: "+8rem"}} // lamba yüksekliği
 >
-        Let's build <br /> together
+        Let&apos;s build together
       </motion.h1>
     </LampContainer>
     
