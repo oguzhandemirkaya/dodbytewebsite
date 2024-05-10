@@ -1,3 +1,6 @@
 [submodule "dodbytewebsite"]
 	path = dodbytewebsite
 	url = https://github.com/oguzhandemirkaya/dodbytewebsite
+[submodule "dodbyte"]
+	path = dodbyte
+	url = https://github.com/oguzhandemirkaya/dodbytewebsite
