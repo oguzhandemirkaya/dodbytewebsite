@@ -8,14 +8,14 @@ export function LampDemo() {
     <LampContainer>
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: -30 }}
+        whileInView={{ opacity: 1, y: -20 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
           ease: "easeInOut",
         }}
         className="mt-3 bg-gradient-to-br from-orange-50 to-orange-300 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-        style={{ marginTop: "0rem"}} // Düzeltildi
+        style={{ marginTop: "-20rem"}} // Düzeltildi
       >
         <div className="flex flex-col items-center">
           <span className="mb-4">Let&apos;s build together</span>

@@ -261,8 +261,8 @@ export default function ContactForm() {
   <SelectTrigger style={{ backgroundColor: '#FFFFFF08', color:'#ffffff' }}>
     <SelectValue placeholder="Select an option" style={{ color: '#ffffff' }} />
   </SelectTrigger>
-  <SelectContent style={{ backgroundColor: '#FFFFFF08' }}> {/* Açılan menü arka plan rengi düzeltilmiş */}
-    <div className="flex flex-col gap-0"> {/* Menü öğeleri arasındaki boşluğu ve yönünü ayarlar */}
+  <SelectContent style={{ backgroundColor: '#FFFFFF08' }}> {/* Açılan menü arka plan rengi */}
+  <div className="flex flex-col gap-0 bg-black"> {/* Menü öğeleri arasındaki boşluğu ve yönünü ayarlar */}
       {["Mobile App Development", "Social Media Marketing", "UI/UX Design", "Branding", "Website Development"].map((service, index) => (
         <SelectItem key={index} value={service} style={{ backgroundColor: '#FFFFFF08', color: '#ffffff' }}> {/* Her menü öğesi için stil düzeltilmiş ve key eklenmiş */}
           {service}

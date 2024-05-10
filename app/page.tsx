@@ -51,9 +51,9 @@ export default function Home() {
   ];
 
   const products = [
-    { thumbnail: "/images/web (1).webp" },
+    { thumbnail: "/images/web (8).webp" },
     { thumbnail: "/images/web (11).webp" },
-    { thumbnail: "/images/web (2).webp" },
+    { thumbnail: "/images/web (3).webp" },
    { thumbnail: "/images/web (4).webp" },
    { thumbnail: "/images/web (5).webp" },
    { thumbnail: "/images/web (13).webp" },
