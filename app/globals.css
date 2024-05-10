@@ -99,17 +99,18 @@
 }
 
 
-/* Parallax container içinde varsayılan scrollbar'ı devre dışı bırak */
-.parallax-container ::-webkit-scrollbar {
-  display: none;
+/* styles/global.css */
+.heroContainer {
+  height: 220vh; /* Default height */
 }
 
-/* Parallax container içinde özel scrollbar'ı aktif et */
-.parallax-container .custom-scrollbar {
-  display: block;
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .heroContainer {
+    height: 180vh; /* Adjusted height for larger screens */
+  }
 }
-.slider-right-shift {
-  transform: translateX(20px);  /* Slider'ı 20px sağa kaydır */
-  /* veya */
-  margin-left: 20px;  /* Slider'a sol taraftan 20px boşluk ekle */
+/* styles/global.css */
+.inputField, .textareaField {
+  background-color: orange /* Arka planı beyaz yapar */
 }

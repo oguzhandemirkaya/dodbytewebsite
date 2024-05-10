@@ -51,16 +51,21 @@ export default function Home() {
   ];
 
   const products = [
-    { thumbnail: "/images/c1s.png" },
-    { thumbnail: "/images/l1s.png" },
-    { thumbnail: "/images/j1s.png" },
-    { thumbnail: "/images/a1s.png" },
-    { thumbnail: "/images/g1s.png" },
-    { thumbnail: "/images/t1s.png" },
-    { thumbnail: "/images/f1s.png" },
-    { thumbnail: "/images/o1s.png" },
-    { thumbnail: "/images/f1s.png" },
-    { thumbnail: "/images/l1s.png" },
+    { thumbnail: "/images/web (1).webp" },
+    { thumbnail: "/images/web (11).webp" },
+    { thumbnail: "/images/web (2).webp" },
+   { thumbnail: "/images/web (4).webp" },
+   { thumbnail: "/images/web (5).webp" },
+   { thumbnail: "/images/web (13).webp" },
+   { thumbnail: "/images/web (9).webp" },
+   { thumbnail: "/images/web (2).webp" },
+   { thumbnail: "/images/web (7).webp" },
+   { thumbnail: "/images/web (10).webp" },
+   { thumbnail: "/images/web (10).webp" },
+   { thumbnail: "/images/web (9).webp" },
+   { thumbnail: "/images/web (6).webp" },
+   { thumbnail: "/images/web (14).webp" },
+
   ];
 
   return (
@@ -81,23 +86,24 @@ export default function Home() {
         <p className="mt-4 text-lg md:text-xl lg:text-2xl font-normal text-neutral-300 max-w-lg text-center mx-auto px-4">
           Custom solutions for your business growth. Our creative team is here to help you succeed.
         </p>
-        <Link href={"/book"} className="cursor-pointer flex items-center justify-center border rounded-full w-48 p-2 mx-auto my-6 text-white">
-          Book a call
-        </Link>
+        <Link href="/contact" className="cursor-pointer flex items-center justify-center border rounded-full w-48 p-2 mx-auto my-6 text-white transition-colors duration-300 ease-in-out hover:bg-[#ff6220] hover:text-white">
+    Book a call
+</Link>
+
         <div className="w-full pt-10">
           <SliderOne />
         </div>
-        <div className="text-white">
+        <div ref={graphicDesignRef}className="text-white">
           <div className="p-20 mx-auto relative z-10 w-full pt-4 md:pt-0 px-2 "style={{ paddingTop: '190px' }}> 
             <div className="text-4xl md:text-7xl text-center text-orange-500" style={{ color: '#FF6220' }}>
-              Graphic Design <br /> that works
+           Graphic Design Solutions <br /> for Your Brand
             </div>
             <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4" style={{ paddingTop: '30px' }}> 
-              Creating unique
+            Elevate your brand with our expert logo designs, dynamic social media posts, and striking web and mobile design elements that tell your visual story.
             </p>
           </div>
         </div>
-        <div ref={graphicDesignRef} style={{ paddingTop: '40px' }}>
+        <div  style={{ paddingTop: '40px' }}>
   <ParallaxScroll images={images} className="my-4" />
 </div>
 
@@ -106,20 +112,21 @@ export default function Home() {
         <HeroParallax products={products} />       
       </div>
       <p className="mt-4 text-lg font-normal text-neutral-300 max-w-lg text-center mx-auto px-4" style={{ paddingTop: '30px' }}> 
-              Creating uniqueCreating uniqueCreating uniqueCreating uniqueCreating uniqueCreating uniqueCreating uniqueCreating uniqueCreating uniqueCreating uniqueCreating unique
+      By merging design with technology, we create interactive experiences. With just a hover, colors and shapes come alive, showcasing your brand’s creativity in the digital realm.
             </p>
-      <div className="items-center md:flex justify-center md:mx-auto md:space-x-20">
+      <div className="items-center md:flex justify-center md:mx-auto md:space-x-20 px-8">
         <div className="flex-1/2">
           <ThreeDCardExample />
         </div>
-        <div className="flex-1/2">
+        <div className="flex-1/2 ">
           <EvervaultCardSnippet />
         </div>
       </div>
       <div ref={servicesRef}>
         <Services />
+        
       </div>
-      <div>
+      <div className="items-center md:flex justify-center md:mx-auto md:space-x-10" style={{ paddingTop: '30px' }}> >
         <LampDemo />
       </div>
     </div>

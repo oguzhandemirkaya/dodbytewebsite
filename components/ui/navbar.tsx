@@ -31,7 +31,7 @@ interface NavbarProps {
 
     return (
         <div className="p-6 md:p-10 flex items-center justify-between z-50">
-            <Link href="https://dodbyte.com"> 
+            <Link href="/"> 
                 <div className="cursor-pointer">
                     <Image
                         priority

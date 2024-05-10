@@ -8,6 +8,7 @@ import {
   MotionValue,
 } from "framer-motion";
 import Image from "next/image";
+import styles from 'app/globals.css';
 
 export const HeroParallax = ({
   products,
@@ -52,10 +53,7 @@ export const HeroParallax = ({
     springConfig
   );
   return (
-    <div
-      ref={ref}
-      className="h-[140vh] py-60 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
-    >
+    <div ref={ref} className={`py-60 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] ${styles.heroContainer}`}>
       <Header />
       <motion.div
         style={{
