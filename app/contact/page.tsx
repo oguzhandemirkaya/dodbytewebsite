@@ -254,7 +254,7 @@ export default function ContactForm() {
       <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
         Services you are interested in
       </FormLabel>
-      <Select
+<Select
   onValueChange={field.onChange}
   defaultValue={field.value}
 >
@@ -393,6 +393,9 @@ export default function ContactForm() {
           )}
         </Form>
       </div>
+      <div className="bg-020817 h-80"></div>
+      <div className="bg-020817 h-20"></div>
     </div>
+    
   );
 }
