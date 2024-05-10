@@ -266,9 +266,9 @@ export default function ContactForm() {
         <SelectContent style={{ backgroundColor: '#000000' }}> {/* Açılan menü arka plan rengi */}
           <div className="flex flex-col gap-0 bg-black"> {/* Menü öğeleri arasındaki boşluğu ve yönünü ayarlar */}
             {["Mobile App Development", "Social Media Marketing", "UI/UX", "Website Design & Build", "Brand Identity", "Other"].map(service => (
-              <SelectItem value={service} style={{ backgroundColor: '#FFFFFF08', color: '#ffffff' }}> {/* Her menü öğesi için stil */}
-                {service}
-              </SelectItem>
+      <SelectItem key={index} value={option} style={{ backgroundColor: '#FFFFFF08', color: '#ffffff' }}> {/* Her menü öğesi için stil */}
+      {option}
+    </SelectItem>
             ))}
           </div>
         </SelectContent>
