@@ -126,9 +126,9 @@ export default function Home() {
         <Services />
         
       </div>
-      <div className="items-center md:flex justify-center md:mx-auto md:space-x-10" style={{ paddingTop: '30px' }}> >
-        <LampDemo />
-      </div>
+      <div className="items-center md:flex justify-center md:mx-auto md:space-x-10" style={{ paddingTop: '30px' }}>
+  <LampDemo />
+</div>
     </div>
   );
 }

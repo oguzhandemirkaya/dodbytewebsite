@@ -10,7 +10,6 @@ import * as z from "zod";
 
 import { Checkbox } from "@/components/ui/checkbox";
 
-import '../globals.css';
 
 import {
   Select,
@@ -40,7 +39,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { PiCheckLight, PiSmiley } from "react-icons/pi";
 import Navbar from "@/components/ui/navbar";
 import { LampDemo } from "@/components/ui/lamp";
-import { Link } from 'react-router-dom';
 
 const FormSchema = z.object({
   first_name: z.string(),
@@ -265,10 +263,10 @@ export default function ContactForm() {
         </FormControl>
         <SelectContent style={{ backgroundColor: '#000000' }}> {/* Açılan menü arka plan rengi */}
           <div className="flex flex-col gap-0 bg-black"> {/* Menü öğeleri arasındaki boşluğu ve yönünü ayarlar */}
-            {["Mobile App Development", "Social Media Marketing", "UI/UX", "Website Design & Build", "Brand Identity", "Other"].map(service => (
-              <SelectItem value={service} style={{ backgroundColor: '#FFFFFF08', color: '#ffffff' }}> {/* Her menü öğesi için stil */}
-                {service}
-              </SelectItem>
+          {["Mobile App Development", "Social Media Marketing", "UI/UX", "Website Design & Build", "Brand Identity", "Other"].map((service, index) => (
+  <SelectItem key={index} value={service} style={{ backgroundColor: '#FFFFFF08', color: '#ffffff' }}>
+    {service}
+  </SelectItem>
             ))}
           </div>
         </SelectContent>
