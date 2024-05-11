@@ -12,7 +12,7 @@ import { EvervaultCardSnippet } from "./snipped/evervault-card-snippet";
 import '../app/globals.css';
 import Services from "./snipped/services";
 import { LampDemo } from "./snipped/lamp-snippet";
-
+import { ParallaxScrollm } from "./tsxgraphic-design-mobile";
 
 
 
@@ -40,14 +40,14 @@ export default function Home() {
     "/images/_002.webp",
     "/images/_003.webp",
     "/images/_004.webp",
-    "/images/_008.webp",
-    "/images/_009.webp",
-    "/images/_010.webp",
     "/images/_005.webp",
     "/images/_006.webp",
     "/images/_007.webp",
+    "/images/_008.webp",
+    "/images/_009.webp",
     "/images/_010.webp",
-    "/images/_010.webp",
+    "/images/M001.webp",
+    "/images/M002.webp",
   ];
 
   const products = [
@@ -103,9 +103,15 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div  style={{ paddingTop: '40px' }}>
+        <div className="hidden md: items-center md:flex justify-center md:mx-auto md:space-x-10" style={{ paddingTop: '30px' }}>
   <ParallaxScroll images={images} className="my-4" />
 </div>
+
+<div className="md:hidden" style={{ paddingTop: '30px' }}>
+  <ParallaxScrollm images={images} className="my-4" />
+</div>
+
+
 
       </div>
       <div ref={websiteDesignRef}>
