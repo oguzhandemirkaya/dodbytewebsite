@@ -138,10 +138,11 @@ export default function Home() {
       <div className="hidden md: items-center md:flex justify-center md:mx-auto md:space-x-10" style={{ paddingTop: '30px' }}>
   <LampDemo />
 </div>
-<div className="text-4xl md:text-7xl text-center text text-orange-500 md:hidden" style={{ color: '#FF6220'}}>
+
+<div className="text-3xl md:text-7xl text-center text text-orange-500 md:hidden" style={{ color: '#FF6220'}}>
   <span className="mb-4">Let&apos;s build together</span>
   <div className=" pt-3 mx-auto border-b-2 border-orange-500"></div>
- <p className="mt-4 text-lg font-normal text-neutral-300 w-90 text-center px-4 pb-5" style={{ paddingTop: '0px', letterSpacing: '2px' }}> 
+ <p className="mt-4 text-sm font-normal text-neutral-300 w-90 text-center flex-auto px-4 pb-8" style={{ paddingTop: '6px', letterSpacing: '2px' }}> 
     Grow your business with dodbye creative studio solutions by getting in touch now
   </p>
   <div className="px-10 cursor-pointer inline-block border rounded-full py-2 text-lg text-white transition-colors duration-300 ease-in-out hover:bg-white hover:text-black" style={{ letterSpacing: '1px', marginBottom: '100px' }}>
