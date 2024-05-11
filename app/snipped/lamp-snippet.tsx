@@ -15,7 +15,7 @@ export function LampDemo() {
           ease: "easeInOut",
         }}
         className="mt-3 bg-gradient-to-br from-orange-50 to-orange-300 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-        style={{ marginTop: "-20rem"}} // Düzeltildi
+        style={{ marginTop: "-0rem"}} // Düzeltildi
       >
         <div className="flex flex-col items-center">
           <span className="mb-4">Let&apos;s build together</span>
