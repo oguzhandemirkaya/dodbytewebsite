@@ -31,7 +31,7 @@ const SliderOne = () => {
     <div>
       <Slider {...settings}>
         <>
-        <div className="20 pl-15 rounded-md px-2 md:p-10">
+        <div className="pl-20 rounded-md px-2 md:p-10">
             <Image
               priority
               src="/images/002.webp"
@@ -46,7 +46,7 @@ const SliderOne = () => {
         </>
 
         <>
-        <div className="20 pl-15 rounded-md px-2 md:p-10">
+        <div className="pl-20 rounded-md px-2 md:p-10">
             <Image
               priority
               src="/images/003.webp"
@@ -61,7 +61,7 @@ const SliderOne = () => {
         </>
 
         <>    
-        <div className="20 pl-15 rounded-md px-2 md:p-10">
+        <div className="pl-20 rounded-md px-2 md:p-10">
             <Image
               priority
               src="/images/004.webp"
@@ -76,7 +76,7 @@ const SliderOne = () => {
         </>
 
         <>
-        <div className="20 pl-15 rounded-md px-2 md:p-10">
+        <div className="pl-20 rounded-md px-2 md:p-10">
             <Image
               priority
               src="/images/005.webp"
@@ -91,7 +91,7 @@ const SliderOne = () => {
         </>
 
         <>
-        <div className="20 pl-15 rounded-md px-2 md:p-10">
+        <div className="pl-20 rounded-md px-2 md:p-10">
             <Image
               priority
               src="/images/006.webp"
