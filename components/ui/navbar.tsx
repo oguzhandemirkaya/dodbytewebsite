@@ -44,9 +44,9 @@ interface NavbarProps {
                 </div>
             </Link>
             <div className="hidden md:flex space-x-10 items-center text-slate-300 text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-white bg-opacity-50"> 
-            <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">Graphic Design</div>
-            <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">Website & Mobile Apps</div>
-            <div onClick={scrollToServices} className="hover:text-gray-50">Services</div>
+            <div onClick={scrollToGraphicDesign} className="hover:text-gray-50 cursor-pointer">Graphic Design</div>
+            <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50 cursor-pointer">Website & Mobile Apps</div>
+            <div onClick={scrollToServices} className="hover:text-gray-50 cursor-pointer">Services</div>
            
 
 

@@ -13,7 +13,7 @@ import '../app/globals.css';
 import Services from "./snipped/services";
 import { LampDemo } from "./snipped/lamp-snippet";
 import { ParallaxScrollm } from "./tsxgraphic-design-mobile";
-
+import SliderMobile from "@/components/ui/slider";
 
 
 
@@ -90,9 +90,12 @@ export default function Home() {
     Book a call
 </Link>
 
-        <div className="w-full pt-10">
-          <SliderOne />
-        </div>
+<div className="w-full pt-10">
+  <SliderOne />
+</div>
+
+
+
         <div ref={graphicDesignRef}className="text-white">
           <div className="p-20 mx-auto relative z-10 w-full pt-4 md:pt-0 px-2 "style={{ paddingTop: '190px' }}> 
             <div className="text-4xl md:text-7xl text-center text-orange-500" style={{ color: '#FF6220' }}>

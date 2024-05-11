@@ -7,7 +7,7 @@ import { useMediaQuery } from "react-responsive";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const SliderOne = () => {
+const SliderMobile = () => {
   const isMediumScreen = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
   const isSmallScreen = useMediaQuery({ maxWidth: 767 });
 
@@ -31,40 +31,25 @@ const SliderOne = () => {
     <div>
       <Slider {...settings}>
         <>
-        <div className="20 pl-20 rounded-md px-2 md:p-10">
+        <div className="rounded-md px-2 md:p-10">
             <Image
               priority
-              src="/images/002.webp"
+              src="/images/002.png"
               alt="logo"
               width={250}
               height={250}
               className="
-                  rounded-2xl
+                  rounded-2xl pl-30
                       "
             />
           </div>
         </>
 
         <>
-        <div className="20 pl-20 rounded-md px-2 md:p-10">
+          <div className="rounded-md px-2 md:p-10">
             <Image
               priority
-              src="/images/003.webp"
-              alt="logo"
-              width={250}
-              height={250}
-              className="
-                  rounded-2xl 
-                      "
-            />
-          </div>
-        </>
-
-        <>    
-        <div className="20 pl-20 rounded-md px-2 md:p-10">
-            <Image
-              priority
-              src="/images/004.webp"
+              src="/images/002.png"
               alt="logo"
               width={250}
               height={250}
@@ -76,10 +61,10 @@ const SliderOne = () => {
         </>
 
         <>
-        <div className="20 pl-20 rounded-md px-2 md:p-10">
+          <div className="rounded-md px-2 md:p-10">
             <Image
               priority
-              src="/images/005.webp"
+              src="/images/002.png"
               alt="logo"
               width={250}
               height={250}
@@ -91,10 +76,25 @@ const SliderOne = () => {
         </>
 
         <>
-        <div className="20 pl-20 rounded-md px-2 md:p-10">
+          <div className="rounded-md px-2 md:p-10">
             <Image
               priority
-              src="/images/006.webp"
+              src="/images/002.png"
+              alt="logo"
+              width={250}
+              height={250}
+              className="
+                  rounded-2xl 
+                      "
+            />
+          </div>
+        </>
+
+        <>
+          <div className="rounded-md px- md:p-10">
+            <Image
+              priority
+              src="/images/002.png"
               alt="logo"
               width={250}
               height={250}
@@ -107,18 +107,8 @@ const SliderOne = () => {
           
         </>
       </Slider>
-      <style jsx global>{`
-
-  @media (min-width: 769px) {
-    .slick-list {
-      padding-left: 12rem;
-    }
-  }
-`}
-</style>
-
     </div>
   );
 };
 
-export default SliderOne;
+export default SliderMobile;
