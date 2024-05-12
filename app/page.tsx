@@ -70,8 +70,10 @@ export default function Home() {
 
   return (
     <>
-      <title>Dodbyte Creative Studio</title>
-      <link rel="icon" href="/favicon.ico" />
+       <Head>
+       <title>Contact Us - Dodbyte Creative Studio</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </Head>
     <div>
     
     <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">

@@ -11,7 +11,7 @@ import * as z from "zod";
 import { Checkbox } from "@/components/ui/checkbox";
 
 import '../globals.css';
-
+import Head  from "next/head";
 import {
   Select,
   SelectContent,
@@ -127,8 +127,11 @@ export default function ContactForm() {
 
   return (
     <>
-      <title>Contact Us - Dodbyte Creative Studio</title>
-      <link rel="icon" href="/favicon.ico" />
+       <Head>
+       <title>Contact Us - Dodbyte Creative Studio</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </Head>
+    <div>
 
   <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
     <Navbar
@@ -401,6 +404,7 @@ export default function ContactForm() {
       <div className="bg-020817 h-20"></div>
     </div>
 
+    </div>
     </>
   );
 }
