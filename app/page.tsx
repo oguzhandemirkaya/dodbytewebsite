@@ -34,7 +34,7 @@ export default function Home() {
   const scrollToServices = () => {
     servicesRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-
+// Parallax image 
   const images = [
     "/images/_001.webp",
     "/images/_002.webp",
@@ -49,11 +49,11 @@ export default function Home() {
     "/images/M001.webp",
     "/images/M002.webp",
   ];
-
+//website image
   const products = [
-    { thumbnail: "/images/web (8).webp" },
-    { thumbnail: "/images/web (11).webp" },
-    { thumbnail: "/images/web (3).webp" },
+   { thumbnail: "/images/web (8).webp" },
+   { thumbnail: "/images/web (11).webp" },
+   { thumbnail: "/images/web (3).webp" },
    { thumbnail: "/images/web (4).webp" },
    { thumbnail: "/images/web (5).webp" },
    { thumbnail: "/images/web (13).webp" },
