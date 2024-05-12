@@ -14,7 +14,7 @@ import Services from "./snipped/services";
 import { LampDemo } from "./snipped/lamp-snippet";
 import { ParallaxScrollm } from "./tsxgraphic-design-mobile";
 import SliderMobile from "@/components/ui/slider";
-
+import Head  from "next/head";
 
 
 
@@ -69,6 +69,11 @@ export default function Home() {
   ];
 
   return (
+    <>
+      <title>Dodbyte Creative Studio</title>
+      <link rel="icon" href="/favicon.ico" />
+    <div>
+    
     <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Navbar
         scrollToWebsiteDesign={scrollToWebsiteDesigns}
@@ -153,6 +158,7 @@ export default function Home() {
 </div>
 
     </div>
+    </div>
+    </>
   );
 }
-
