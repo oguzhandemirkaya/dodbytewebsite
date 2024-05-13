@@ -114,7 +114,7 @@ export default function Home() {
   <ParallaxScroll images={images} className="my-4" />
 </div>
 
-<div className="md:hidden" style={{ paddingTop: '30px' }}>
+<div className="md:hidden" style={{ paddingTop: '31px' }}>
   <ParallaxScrollm images={images} className="my-4" />
 </div>
 
