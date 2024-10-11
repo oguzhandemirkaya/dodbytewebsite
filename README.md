@@ -1,4 +1,6 @@
-# Dodbyte Website
+# My App
+
+![Screenshot](public/images/ss1.png)
 
 This project is a modern website built using **Next.js**, **React**, **TypeScript**, and **Tailwind CSS**. It incorporates dynamic design elements such as a responsive image carousel, parallax scrolling, and custom animations. Additionally, the project integrates UI components from **Radix UI** and form validation using **React Hook Form**.
 
