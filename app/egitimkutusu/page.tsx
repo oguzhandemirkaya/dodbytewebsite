@@ -122,7 +122,7 @@ const EgitimKutusu = () => {
           {/* İçerik */}
           <div className="flex flex-col items-center justify-center min-h-screen  pt-10 mt-5 w-full">
            <h3 className="font-bold mb-2 sm:mb-1 text-[15pt] sm:text-[20pt]">
-            Eğitim Kutusu Nasıl Yapılır Eğitimi
+            egitimkutusu.com düzenleme & bilinmesi gerekenler
            </h3>
          <video
            controls
