@@ -111,7 +111,12 @@ const EgitimKutusu = () => {
         >
           {/* Navbar En Üste */}
           <header className="w-full fixed top-0 left-0 z-50">
-            <Navbar />
+          <Navbar
+  scrollToGraphicDesign={() => {}}
+  scrollToWebsiteDesign={() => {}}
+  scrollToServices={() => {}}
+/>
+
           </header>
 
           {/* İçerik */}
