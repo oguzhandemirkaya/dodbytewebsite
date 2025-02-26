@@ -1,0 +1,9 @@
+/* Scroll bar'ı görsel olarak gizler ama kaydırma işlevini korur */
+.custom-scrollbar {
+    overflow-y: auto;  /* Dikey kaydırma etkin */
+    scrollbar-width: none;  /* Firefox için scrollbar'ı gizle */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari ve diğer WebKit tabanlı tarayıcılar için scrollbar'ı gizle */
+}
