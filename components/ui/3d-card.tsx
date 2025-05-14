@@ -7,7 +7,7 @@ import React, {
   useContext,
   useRef,
   useEffect,
-  useCallback, // useCallback'i import edelim
+  useCallback, 
 } from "react";
 
 const MouseEnterContext = createContext<
@@ -122,7 +122,7 @@ export const CardItem = ({
   const ref = useRef<HTMLDivElement>(null);
   const [isMouseEntered] = useMouseEnter();
 
-  // useCallback ile handleAnimations fonksiyonunu sarmalayalım
+
   const handleAnimations = useCallback(() => {
     if (!ref.current) return;
     if (isMouseEntered) {
@@ -130,11 +130,11 @@ export const CardItem = ({
     } else {
       ref.current.style.transform = `translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)`;
     }
-  }, [isMouseEntered, translateX, translateY, translateZ, rotateX, rotateY, rotateZ]);  // Bağımlılıkları ekleyin
+  }, [isMouseEntered, translateX, translateY, translateZ, rotateX, rotateY, rotateZ]);  
 
   useEffect(() => {
     handleAnimations();
-  }, [handleAnimations]);  // Bağımlılıkları güncelleyin
+  }, [handleAnimations]); 
 
   return (
     <Tag
@@ -147,7 +147,7 @@ export const CardItem = ({
   );
 };
 
-// Create a hook to use the context
+
 export const useMouseEnter = () => {
   const context = useContext(MouseEnterContext);
   if (context === undefined) {
